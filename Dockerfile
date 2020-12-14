@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="Andrea Cuneo <andrea.cuneo@ark-energy.eu>"
+LABEL maintainer="Andrea Cuneo <andrea.cuneo@ark-energy.eu>" version="1.0.0"
 
 ENV AzureAdDomain=\
     AzureAdClientId=\
