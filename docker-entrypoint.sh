@@ -10,7 +10,7 @@ realm $AzureAdDomain {
         discovery = "https://login.microsoftonline.com/%{Realm}/v2.0"
         client_id = "$AzureAdClientId"
         client_secret = "$AzureAdSecret"
-        cache_password = no
+        cache_password = yes
     }
 }
 EOF

@@ -321,9 +321,9 @@ post-auth {
 
     oauth2
 
-	if (&control:Auth-Type == "oauth2" && &OAuth2-Group) {
-		update reply {
-			Class := "%{echo:/bin/sh -c 'echo \"%{OAuth2-Group[*]}\" | tr , \\;'}"
+	if (&OAuth2-Group) {
+		update {
+			&reply:Class += &request:OAuth2-Group[*]
 		}
 	}
 
