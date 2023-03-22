@@ -77,6 +77,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          provenance: false # see https://github.com/n8n-io/n8n/issues/5394
 
 
       # Sign the resulting Docker image digest except on PRs.
